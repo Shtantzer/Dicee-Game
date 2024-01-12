@@ -7,9 +7,9 @@ document.querySelector(".container h1").addEventListener("click", function() { /
         var secondImage = document.querySelectorAll("img")[1].setAttribute("src", "images/dice" + randomNumber2 + ".png");
         
         var natpis = document.querySelector(".container h1");
-        
+
         if (randomNumber1>randomNumber2) {
-                natpis.innerHTML = "Player 1 wins";   
+                natpis.innerHTML = "Player 1 wins";  
             }
 
             else if (randomNumber1<randomNumber2) {
@@ -19,6 +19,13 @@ document.querySelector(".container h1").addEventListener("click", function() { /
             else {
                 natpis.innerHTML = "Draw";
             }
+
+        
+        var refresh = document.querySelector(".container h2");
+        
+        refresh.addEventListener("click", function refreshPage() {
+                location.reload();
+            });
 });
 
 
